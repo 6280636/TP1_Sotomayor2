@@ -1,0 +1,35 @@
+﻿@model IEnumerable<TP1_Sotomayor.Models.Joueur>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="Favoris">
+<h5>Nombre d'éléments de la liste: @Model.Count()</h5>
+    <table style="width: 80%;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Joueur in Model)
+        {
+            <tr>
+                <td>@Joueur.Id</td>
+                <td>@Joueur.Nom</td>
+                <td><img class="img-fluid" src="@Joueur.ImgFile" alt="@Joueur.Nom"></td>
+                <td>
+                    <form method="post" asp-action="SupprimerUnJoueur">
+                        <input type="hidden" name="id" value="@Joueur.Id" />
+                        <button type="submit">Supprimer</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>   
+    </table>
+</div>
+
+
+

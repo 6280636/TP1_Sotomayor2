@@ -1,0 +1,108 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using TP1_Sotomayor.Models;
+using TP1_Sotomayor.Views.ViewModels;
+
+
+namespace TP1_Sotomayor.Controllers
+{
+    public class JoueurController : Controller
+    {
+        private BaseDeDonnees DB { get; set; }
+        public JoueurController(BaseDeDonnees db)
+        {
+            this.DB = db;
+        }
+        public IActionResult Recherche()
+        {
+            var model = new PageRechercheViewModel();
+            model.Criteres = new CritereRechercheViewModel();
+            model.Criteres.EstJoueurDuBarselona = true;
+            model.Criteres.EstJoueurDuRealMadrid = true;
+            model.Criteres.EstJoueurDuAtleticoMadrid = true;
+            //model.Criteres.NomDuJueur = "Antoine";
+
+            model.Resultat = this.DB.Joueurs.ToList();
+
+            return View(model);
+        }
+
+        [Route("/Joueur/Detail/{id:int}")]
+        [Route("/Joueur/{id:int}")]
+        [Route("/{id:int}")]
+        public IActionResult DetailParID(int id)
+        {
+            var personneRecherche = DB.Joueurs.Where(e=> e.Id == id).SingleOrDefault();
+            if (personneRecherche == null)
+            {
+                ViewData["Message2"] = "Le joueur demandé n'a pas été trouvé!";
+                return View("NonTrouve", ViewData["Message2"]);
+            }
+            
+                return View("Detail", personneRecherche);
+            
+           
+        }
+
+        [Route("/Joueur/Detail")]        
+        public IActionResult DetailParNom(string id)
+        {
+            var personneRecherche = DB.Joueurs.Where(e => e.Nom.ToUpper() == id).SingleOrDefault();
+            if (personneRecherche == null)
+            {
+                ViewData["Message"] = "Il faut choisir un Jueur";
+                return View("NonTrouve", ViewData["Message"]);
+            }
+           
+                return View("Detail", personneRecherche);
+                      
+
+        }
+        [HttpGet]
+        public IActionResult Filter(CritereRechercheViewModel critere)
+        {
+            IEnumerable<Joueur> donnees = this.DB.Joueurs;
+            if (critere.NomDuJueur != null)
+            {
+                donnees = donnees.Where(c => c.Nom.ToLower() == critere.NomDuJueur.ToLower()
+                || c.Parent.Nom.ToLower() == critere.NomDuJueur.ToLower());
+            }           
+            if (!critere.EstJoueurDuBarselona)
+            {
+                donnees = donnees.Where(c => c.Equipe != "Barcelona");
+            }
+            if (!critere.EstJoueurDuRealMadrid)
+            {
+                donnees = donnees.Where(c => c.Equipe != "Real Madrid");
+            }
+            if (!critere.EstJoueurDuAtleticoMadrid)
+            {
+                donnees = donnees.Where(c => c.Equipe != "Atletico Madrid");
+            }
+           
+            if (critere.MinNbrDeButs != null)
+            {
+                donnees = donnees.Where(c => c.Buts >= critere.MinNbrDeButs);
+            }
+            if (critere.MaxNbrDeButs != null)
+            {
+                donnees = donnees.Where(c => c.Buts >= critere.MaxNbrDeButs);
+            }
+            var pageRechercheViewModel = new PageRechercheViewModel();
+            
+            pageRechercheViewModel.Criteres = critere;
+
+            pageRechercheViewModel.Resultat = donnees.ToList();
+            if (pageRechercheViewModel.Resultat.Count == 0)
+            {
+                ViewData["Message"] = "Lo siento, no se encontraron resultados.";
+               
+            }
+            
+                return View("Recherche",pageRechercheViewModel);
+           
+
+
+           
+        }
+    }
+}

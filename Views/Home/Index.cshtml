@@ -1,0 +1,18 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using TP1_Sotomayor.Models
+@model List<Equipe>
+
+<div class="container">
+    <div class="row justify-content-around"> 
+        @foreach(var p in Model){
+        <div class="a col-3 text-center">           
+             <a asp-controller="Joueur" asp-action="Recherche">
+                <img class="img-fluid" src="@p.ImgFile">
+                <h3>@p.Nom</h3>                
+                <img class="img-fluid" src="@p.Logo">
+            </a>
+            <h5>@p.Description</h5>                
+        </div>}       
+    </div>
+</div>
+

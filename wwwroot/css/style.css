@@ -1,0 +1,145 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('/Images/images.jpg');
+    background-size: 100%;
+   
+}
+h1{    
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    color: #eee;
+}
+h2{    
+    font-size: 40px;
+    font-weight: normal;
+    text-align: left;
+    
+}
+header{     
+    height: 50px;
+    background-color: rgba(0, 255, 255, 0.5);
+}
+nav {
+    
+    width: 100%;    
+    background-color: rgba(0, 255, 255, 0.5);  
+    text-align:center
+    
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+   
+}
+nav li {
+    list-style: none;
+    float: left;
+    color: black;
+    
+}
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 20px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+   
+}
+table{
+    display: table;
+    margin: 0 auto;
+}
+.a{    
+    background-color: hsla(249, 94%, 25%, 0.493);       
+    line-height: 10px; 
+    border: solid black;    
+}
+
+.d{    
+    background-color: hsla(249, 94%, 25%, 0.493);     
+    line-height: 10px;   
+    border: solid black; 
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulario{
+    background-color: rgba(75, 73, 73, 0.6);     
+    line-height: 10px;   
+    border: solid black; 
+    margin: 10px; 
+}
+.A{    
+    color: black;    
+            
+}
+.detail{
+    text-align: left;
+    color: aquamarine;
+}
+.Favoris {
+    text-align: left;
+    color: aquamarine;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div a{
+    text-decoration: none; 
+    color: aquamarine;    
+}
+.row {
+    color: aquamarine;    
+}
+.v{    
+    background-color: hsla(249, 94%, 25%, 0.493);     
+      
+} 
+
+
+thead {
+    background-color: hsla(249, 94%, 25%, 0.493);
+    font-weight: bold;
+    color: #eee;
+
+}
+
+tbody tr:nth-child(even) {
+
+    background-color: rgb(255, 255, 255, 0.6);
+    
+    }
+    
+tbody tr:nth-child(odd) {
+    
+    background-color:rgba(114, 112, 112, 0.5);
+    }
+/*favoris {
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: au*/to;
+/*}*/
+ 
+@media (max-width: 780px) {
+    header {
+        height: 50px;
+    }
+    h1{
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+ }
+    
+    
