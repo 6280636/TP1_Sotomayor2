@@ -1,16 +1,28 @@
-﻿namespace TP1_Sotomayor.Models
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+
+namespace TP1_Sotomayor.Models
 {
     public class Equipe
     {
+        [Key]
         public int Id { get; set; }
-        public string Nom { get; set; }        
-        public string ImgFile { get; set; }        
+
+        [StringLength(15, MinimumLength = 5)]
+        public string Nom { get; set; }
+
+        [StringLength(250)]
+        public string ImgFile { get; set; }
+
+        [StringLength(250)]
         public string Logo { get; set; }
+
+        [StringLength(250)]
         public string Description { get; set; }
 
         //Propriete de Navigation
-
-        public List<Joueur> Joueurs { get; set; }
+        [ValidateNever]
+        public ICollection<Joueur> Joueurs { get; set; }
 
         public Equipe()
         {

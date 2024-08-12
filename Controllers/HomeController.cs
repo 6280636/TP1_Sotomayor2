@@ -1,19 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TP1_Sotomayor.Models;
+using TP1_Sotomayor.Models.Data;
 
 namespace TP1_Sotomayor.Controllers
 {
     public class HomeController : Controller
     {
-        private BaseDeDonnees DB { get; set; }
-        public HomeController(BaseDeDonnees dB)
+        private TP1DbContext _baseDonnees { get; set; }
+        public HomeController(TP1DbContext baseDonnees)
         {
-            this.DB = dB;
+            _baseDonnees = baseDonnees;
         }
 
         public IActionResult Index()
         {
-            return View(DB.Parents.ToList());
+            List<Equipe> equipes = _baseDonnees.Equipe.ToList();
+            return View(equipes);
         }
     }
 }
+

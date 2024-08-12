@@ -1,10 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using TP1_Sotomayor.Models;
 using System;
+using TP1_Sotomayor.Models.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<TP1DbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddRazorPages();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(option => { option.IdleTimeout = TimeSpan.FromMinutes(20); });

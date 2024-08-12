@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TP1_Sotomayor.Models;
+using TP1_Sotomayor.Models.Data;
 using TP1_Sotomayor.Views.ViewModels;
 
 
@@ -7,10 +8,10 @@ namespace TP1_Sotomayor.Controllers
 {
     public class JoueurController : Controller
     {
-        private BaseDeDonnees DB { get; set; }
-        public JoueurController(BaseDeDonnees db)
+        private TP1DbContext _baseDonnees { get; set; }
+        public JoueurController(TP1DbContext baseDonnees)
         {
-            this.DB = db;
+            _baseDonnees = baseDonnees;
         }
         public IActionResult Recherche()
         {
@@ -21,7 +22,7 @@ namespace TP1_Sotomayor.Controllers
             model.Criteres.EstJoueurDuAtleticoMadrid = true;
             //model.Criteres.NomDuJueur = "Antoine";
 
-            model.Resultat = this.DB.Joueurs.ToList();
+            model.Resultat = _baseDonnees.Joueurs.ToList();
 
             return View(model);
         }
@@ -31,7 +32,7 @@ namespace TP1_Sotomayor.Controllers
         [Route("/{id:int}")]
         public IActionResult DetailParID(int id)
         {
-            var personneRecherche = DB.Joueurs.Where(e=> e.Id == id).SingleOrDefault();
+            var personneRecherche = _baseDonnees.Joueurs.Where(e=> e.Id == id).SingleOrDefault();
             if (personneRecherche == null)
             {
                 ViewData["Message2"] = "Le joueur demandé n'a pas été trouvé!";
@@ -46,7 +47,7 @@ namespace TP1_Sotomayor.Controllers
         [Route("/Joueur/Detail")]        
         public IActionResult DetailParNom(string id)
         {
-            var personneRecherche = DB.Joueurs.Where(e => e.Nom.ToUpper() == id).SingleOrDefault();
+            var personneRecherche = _baseDonnees.Joueurs.Where(e => e.Nom.ToUpper() == id).SingleOrDefault();
             if (personneRecherche == null)
             {
                 ViewData["Message"] = "Il faut choisir un Jueur";
@@ -60,23 +61,24 @@ namespace TP1_Sotomayor.Controllers
         [HttpGet]
         public IActionResult Filter(CritereRechercheViewModel critere)
         {
-            IEnumerable<Joueur> donnees = this.DB.Joueurs;
+            IEnumerable<Joueur> donnees = _baseDonnees.Joueurs;
+
             if (critere.NomDuJueur != null)
             {
                 donnees = donnees.Where(c => c.Nom.ToLower() == critere.NomDuJueur.ToLower()
-                || c.Parent.Nom.ToLower() == critere.NomDuJueur.ToLower());
+                || c.Equipe.Nom.ToLower() == critere.NomDuJueur.ToLower());
             }           
             if (!critere.EstJoueurDuBarselona)
             {
-                donnees = donnees.Where(c => c.Equipe != "Barcelona");
+                donnees = donnees.Where(c => c.Equipe.Nom != "Barcelona");
             }
             if (!critere.EstJoueurDuRealMadrid)
             {
-                donnees = donnees.Where(c => c.Equipe != "Real Madrid");
+                donnees = donnees.Where(c => c.Equipe.Nom != "Real Madrid");
             }
             if (!critere.EstJoueurDuAtleticoMadrid)
             {
-                donnees = donnees.Where(c => c.Equipe != "Atletico Madrid");
+                donnees = donnees.Where(c => c.Equipe.Nom != "Atletico Madrid");
             }
            
             if (critere.MinNbrDeButs != null)

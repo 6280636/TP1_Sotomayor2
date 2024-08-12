@@ -8,6 +8,8 @@ namespace TP1_Sotomayor.Models.Data
         {
 
         }
+        public DbSet<Equipe> Equipe { get; set; }
+        public DbSet<Joueur> Joueurs { get; set; }
 
     }
 
