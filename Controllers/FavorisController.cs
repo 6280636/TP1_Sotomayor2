@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TP1_Sotomayor.Models;
+using TP1_Sotomayor.Models.Data;
 using TP1_Sotomayor.Views.ViewModels;
 
 namespace TP1_Sotomayor.Controllers
 {
     public class FavorisController : Controller
     {
-        private BaseDeDonnees DB { get; set; }
-        public FavorisController(BaseDeDonnees db)
+        private TP1DbContext _baseDonnees { get; set; }
+        public FavorisController(TP1DbContext baseDonnees)
         {
-            this.DB = db;
+            _baseDonnees = baseDonnees;
         }
         public IActionResult Index()
         {
@@ -18,7 +19,7 @@ namespace TP1_Sotomayor.Controllers
             {
                 JoueurId= new List<int>();
             }
-            var JoueurDeLaBD = this.DB.Joueurs.Where(e => JoueurId.Contains(e.Id)).ToList();
+            var JoueurDeLaBD = _baseDonnees.Joueurs.Where(e => JoueurId.Contains(e.Id)).ToList();
             return View(JoueurDeLaBD);
         }
         [HttpPost]

@@ -17,16 +17,16 @@ namespace TP1_Sotomayor.Models
         [StringLength(250)]
         public string Logo { get; set; }
 
-        [StringLength(250)]
+        [StringLength(3000)]
         public string Description { get; set; }
 
         //Propriete de Navigation
         [ValidateNever]
         public ICollection<Joueur> Joueurs { get; set; }
 
-        public Equipe()
-        {
-            Joueurs = new List<Joueur>();
-        }
+        //public Equipe()
+        //{
+        //    Joueurs = new List<Joueur>();
+        //}
     }
 }

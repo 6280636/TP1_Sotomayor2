@@ -11,6 +11,13 @@ namespace TP1_Sotomayor.Models.Data
         public DbSet<Equipe> Equipe { get; set; }
         public DbSet<Joueur> Joueurs { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Générer des données de départ
+            modelBuilder.GenerateData();
+        }
+
+
     }
 
 

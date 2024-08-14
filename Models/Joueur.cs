@@ -14,7 +14,7 @@ namespace TP1_Sotomayor.Models
         public string Nom { get; set; }
         public int Age { get; set; }
 
-        [StringLength(250)]
+        [StringLength(3000)]
         public string Description { get; set; }
         //public string Equipe { get; set; }
 

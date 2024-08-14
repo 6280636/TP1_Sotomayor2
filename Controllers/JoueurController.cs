@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TP1_Sotomayor.Models;
 using TP1_Sotomayor.Models.Data;
 using TP1_Sotomayor.Views.ViewModels;
@@ -61,7 +62,7 @@ namespace TP1_Sotomayor.Controllers
         [HttpGet]
         public IActionResult Filter(CritereRechercheViewModel critere)
         {
-            IEnumerable<Joueur> donnees = _baseDonnees.Joueurs;
+            IEnumerable<Joueur> donnees = _baseDonnees.Joueurs.Include(j => j.Equipe);
 
             if (critere.NomDuJueur != null)
             {

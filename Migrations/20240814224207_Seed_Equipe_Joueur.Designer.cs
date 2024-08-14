@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TP1_Sotomayor.Models.Data;
 
@@ -10,9 +11,10 @@ using TP1_Sotomayor.Models.Data;
 namespace TP1_Sotomayor.Migrations
 {
     [DbContext(typeof(TP1DbContext))]
-    partial class TP1DbContextModelSnapshot : ModelSnapshot
+    [Migration("20240814224207_Seed_Equipe_Joueur")]
+    partial class Seed_Equipe_Joueur
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
