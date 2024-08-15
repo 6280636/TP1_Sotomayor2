@@ -1,7 +1,11 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @using TP1_Sotomayor.Models
 @model List<Equipe>
-
+<div class="col-2 text-right">
+    <a asp-controller="Home" asp-action="Create" class="btn btn-success">
+        Create New Type
+    </a>
+</div>
 <div class="container">
     <div class="row justify-content-around"> 
         @foreach(var p in Model){

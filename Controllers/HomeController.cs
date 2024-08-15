@@ -17,6 +17,27 @@ namespace TP1_Sotomayor.Controllers
             List<Equipe> equipes = _baseDonnees.Equipe.ToList();
             return View(equipes);
         }
+
+        //Get Create
+        public IActionResult Create()
+        {
+
+            return View();
+        }
+
+        //Post
+        [HttpPost]
+        public IActionResult Create(Models.Equipe equipe)
+        {
+            if (ModelState.IsValid)
+            {
+                _baseDonnees.Equipe.Add(equipe);
+                _baseDonnees.SaveChanges();
+                TempData["Succes"] = $"{equipe.Nom} equipe added";
+                return RedirectToAction("Index");
+            }
+            return View(equipe);
+        }
     }
 }
 
