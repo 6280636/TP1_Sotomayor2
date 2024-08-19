@@ -61,6 +61,31 @@ namespace TP1_Sotomayor.Controllers
 
             return View(equipe);
         }
+        public IActionResult Delete(int id)
+        {
+            Equipe? equipe = _baseDonnees.Equipe.Find(id);
+            if (equipe == null)
+            {
+                return NotFound();
+            }
+
+            return View(equipe);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePost(int id)
+        {
+            Equipe? equipe = _baseDonnees.Equipe.Find(id);
+            if (equipe == null)
+            {
+                return NotFound();
+            }
+
+            _baseDonnees.Equipe.Remove(equipe);
+            _baseDonnees.SaveChanges();
+            TempData["Success"] = $"Equipe {equipe.Nom} has been removed";
+            return RedirectToAction("Index");
+        }
     }
 }
 
