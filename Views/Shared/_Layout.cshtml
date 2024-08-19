@@ -14,6 +14,33 @@
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/imagesLayout/tile.png" ) /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Joueur" asp-action="Recherche">Recherche</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Favoris" asp-action="Index">Favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Joueur" asp-action="Detail">Detail</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    @* <header>
         <h1>Grandes Equipes de Soccer</h1>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -21,24 +48,24 @@
         <div class="table">
             <ul>
                 <li class="menu-acc">
-                    @* <a href="~/Home/Index" style="color:black"><i class="fas fa-search"></i>Accueil</a> *@
+                   
                     <a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>Accueil</a>
                 </li>
                 <li class="menu-rech">
-                    @* <a href="~/Joueur/Recherche" style="color:black"><i class="fas fa-search"></i>Recherche</a> *@
+                   
                     <a asp-controller="Joueur" asp-action="Recherche"><i class="fas fa-search"></i>Recherche</a>
                 </li>
                 <li class="menu-fav">
-                    @* <a href="~/Favoris/Favoris" style="color:black"><i class="fa-regular fa-star"></i>Favoris</a> *@
+                    
                     <a asp-controller="Favoris" asp-action="Index"><i class="fas fa-star"></i>Favoris</a>
                 </li>
                 <li class="menu-det">
-                    @* <a href="~/Joueur/Detail" style="color:black"><i class="fa-regular fa-star"></i>Détail</a> *@
+                   
                     <a asp-controller="Joueur" asp-action="Detail"><i class="fas fa-search"></i>Détail</a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> *@
     <main>
         <br /><br />
         @RenderBody()

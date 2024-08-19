@@ -14,7 +14,9 @@ namespace TP1_Sotomayor.Controllers
 
         public IActionResult Index()
         {
-            List<Equipe> equipes = _baseDonnees.Equipe.ToList();
+            List<Equipe> equipes = _baseDonnees.Equipe
+                //.OrderBy(e => e.Nom)
+                .ToList();
             return View(equipes);
         }
 
@@ -36,6 +38,27 @@ namespace TP1_Sotomayor.Controllers
                 TempData["Succes"] = $"{equipe.Nom} equipe added";
                 return RedirectToAction("Index");
             }
+            return View(equipe);
+        }
+        public IActionResult Edit(int id)
+        {
+            Equipe equipe = _baseDonnees.Equipe.Find(id);
+
+            return View(equipe);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Equipe equipe)
+        {
+            if (ModelState.IsValid)
+            {
+                _baseDonnees.Equipe.Update(equipe);
+                _baseDonnees.SaveChanges();
+                TempData["Success"] = $"Equipe {equipe.Nom} has been modified";
+                return this.RedirectToAction("Index");
+            }
+
             return View(equipe);
         }
     }
