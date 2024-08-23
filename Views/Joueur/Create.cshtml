@@ -1,0 +1,95 @@
+﻿@model TP1_Sotomayor.Models.Joueur
+@* @model TP1_Sotomayor.Models.Equipe *@
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>Create</h1>
+<h4>Joueur</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div class="row p-3 ">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group row">
+                    @* <input asp-for="@Model.Id" class="form-control" hidden /> *@
+                    <div class="col-4">
+                        <label asp-for="@Model.Nom" class="control-label"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="@Model.Nom" class="form-control" />
+                        <span asp-validation-for="@Model.Nom" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    @* <input asp-for="@Model.EquipeId" class="form-control" hidden /> *@
+                    <div class="col-4">
+                        <label asp-for="@Model.EquipeId" class="control-label"> Equipe</label>
+                    </div>
+                    <div class="col-8">
+                        <select asp-for="EquipeId" asp-items="ViewBag.EquipeList" class="form-control">
+                            <option value="">Select an equipe</option>
+                        </select>
+                        <span asp-validation-for="EquipeId" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="@Model.Age" class="control-label"></label>
+                    </div>
+                    <div class="col-2">
+                        <input asp-for="@Model.Age" class="form-control" />
+                        <span asp-validation-for="@Model.Age" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="@Model.Buts" class="control-label"></label>
+                    </div>
+                    <div class="col-2">
+                        <input asp-for="@Model.Buts" class="form-control" />
+                        <span asp-validation-for="@Model.Buts" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="@Model.Description" class="control-label"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="Description" class="form-control summernote" style="height:300px;"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                        
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="@Model.ImgFile" class="control-label"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="@Model.ImgFile" class="form-control" />
+                        <span asp-validation-for="@Model.ImgFile" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row  py-2">
+                    <div class="col-10 offset-4 row">
+                        <div class="col-5">
+                            <input type="submit" class="btn btn-success w-100" value="Create" />
+                        </div>
+                        <div class="col-5">
+                            <a asp-action="Recherche" class="btn btn-secondary w-100">Back to list</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

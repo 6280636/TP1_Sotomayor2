@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TP1_Sotomayor.Models;
 using TP1_Sotomayor.Models.Data;
@@ -101,11 +102,77 @@ namespace TP1_Sotomayor.Controllers
                
             }
             
-                return View("Recherche",pageRechercheViewModel);
-           
+                return View("Recherche",pageRechercheViewModel);        
 
-
-           
         }
+        //Get Create
+        public IActionResult Create()
+        {
+            var equipes = _baseDonnees.Equipe.ToList();
+            ViewBag.EquipeList = new SelectList(equipes, "Id", "Nom"); // Id es el valor enviado, Nom es el texto mostrado
+            return View();
+        }
+
+        //Post
+        [HttpPost]
+        public IActionResult Create(Models.Joueur joueur)
+        {
+            if (ModelState.IsValid)
+            {
+                _baseDonnees.Joueurs.Add(joueur);
+                _baseDonnees.SaveChanges();
+                TempData["Succes"] = $"{joueur.Nom} joueur added";
+                return RedirectToAction("Recherche");
+            }
+            return View(joueur);
+        }
+        public IActionResult Edit(int id)
+        {
+            Joueur joueur = _baseDonnees.Joueurs.Find(id);
+
+            return View(joueur);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Joueur joueur)
+        {
+            if (ModelState.IsValid)
+            {
+                _baseDonnees.Joueurs.Update(joueur);
+                _baseDonnees.SaveChanges();
+                TempData["Success"] = $"Joueur {joueur.Nom} has been modified";
+                return this.RedirectToAction("Recherche");
+            }
+
+            return View(joueur);
+        }
+        public IActionResult Delete(int id)
+        {
+            Joueur? joueur = _baseDonnees.Joueurs.Find(id);
+            if (joueur == null)
+            {
+                return NotFound();
+            }
+
+            return View(joueur);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePost(int id)
+        {
+            Joueur? joueur = _baseDonnees.Joueurs.Find(id);
+            if (joueur == null)
+            {
+                return NotFound();
+            }
+
+            _baseDonnees.Joueurs.Remove(joueur);
+            _baseDonnees.SaveChanges();
+            TempData["Success"] = $"Joueur {joueur.Nom} has been removed";
+            return RedirectToAction("Recherche");
+        }
+      
+
+        
     }
 }
