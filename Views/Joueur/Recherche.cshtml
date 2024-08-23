@@ -6,69 +6,81 @@
 
 
 <div class="container-fluid">
+    <div class="row mb-3">
+        <!-- Título y botón en la misma fila -->
+        <div class="col-7 d-flex align-items-center">
+            <h3 class="mb-0">Joueurs</h3>
+        </div>
+        <div class="col-1 text-end">
+            <a href="/Joueur/Create" class="btn btn-success">Créer Nouveau</a>
+        </div>
+    </div>
     <div class="row justify-content-around">
         <div class="col-8">
             <div class="row justify-content-around">
-                 @if (Model.Resultat.Count == 0)
+                @if (Model.Resultat.Count == 0)
                 {
-                <div class="alert alert-info" role="alert">
+                    <div class="alert alert-info" role="alert">
                         <h5>@ViewData["Message"]</h5>
-                </div>
+                    </div>
                 }
                 else
                 {
                     <!-- Aquí va tu código para mostrar la lista de resultados -->
-                
-               @foreach(var e in @Model.Resultat ){
-                    <div class="a col-3 text-center"><a asp-controller="Joueur" asp-action="Detail" asp-route-id="@e.Id"><h6>@e.Nom</h6><img class="img-fluid" src="@e.ImgFile" alt="SOCCER"><h6>2004/ 2021-474 but</h6></a></div>
+                    @foreach (var e in @Model.Resultat)
+                    {
+                        <div class="a col-3 text-center position-relative mb-4">
+                            <a asp-controller="Joueur" asp-action="Detail" asp-route-id="@e.Id">
+                                <h6>@e.Nom</h6>
+                                <img class="img-fluid" src="@e.ImgFile" alt="SOCCER">
+                                <h6>2004/ 2021-474 but</h6>
+                            </a>
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <a asp-controller="Joueur" asp-action="Edit" asp-route-id="@e.Id" class="btn btn-warning btn-sm me-1">Edit</a>
+                                <form asp-controller="Joueur" asp-action="Delete" asp-route-id="@e.Id" method="post" style="display:inline;">
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    }
                 }
-                }
-                
             </div>
-        
         </div>
         <div class="d col-3">
             <form action="/Joueur/filter" method="get">
                 <div class="row mb-3">
                     <div class="col ">
                         <label for="NomDuJueur" class="form-label">Nom du Jueur</label>
-                           <input type="text" name="NomDuJueur" value="@Model.Criteres.NomDuJueur" id="NomDuJueur" class="form-control"
-                               placeholder="Nom ici">                       
+                        <input type="text" name="NomDuJueur" value="@Model.Criteres.NomDuJueur" id="NomDuJueur" class="form-control" placeholder="Nom ici">
                     </div>
                 </div>
                 <div class="row my-3">
                     <div class="col-4">
-                        <label for="NbrDeButs" class="form-label">Nbre. Min <br/> buts</label>
-                        <input type="number" name="MinNbrDeButs" value="@Model.Criteres.MinNbrDeButs" id="NbrDeButs" class="form-control"
-                        placeholder="0">                        
+                        <label for="NbrDeButs" class="form-label">Nbre. Min <br /> buts</label>
+                        <input type="number" name="MinNbrDeButs" value="@Model.Criteres.MinNbrDeButs" id="NbrDeButs" class="form-control" placeholder="0">
                     </div>
                     <div class="col-4">
-                        <label for="NbrdeButs" class="form-label">Nbre. Max <br/> buts</label>
-                        <input type="number" name="MaxNbrDeButs" value="@Model.Criteres.MaxNbrDeButs" id="NbrdeButs" class="form-control"
-                        placeholder="0">                    
-
+                        <label for="NbrdeButs" class="form-label">Nbre. Max <br /> buts</label>
+                        <input type="number" name="MaxNbrDeButs" value="@Model.Criteres.MaxNbrDeButs" id="NbrdeButs" class="form-control" placeholder="0">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col ">
-                           
                         <label for="entiteVedette" class="form-label">Status Du Jueur</label>
                         <select id="entiteVedette" name="StatusDuJueur">
-                        <option value="">Peu importe</option>                      
-                        <option value="true">Oui</option>                       
-                        <option value="false">Non</option>                      
-                            
+                            <option value="">Peu importe</option>
+                            <option value="true">Oui</option>
+                            <option value="false">Non</option>
                         </select><br><br>
                         <label for="entiteVedette">Équipe Du Jueur</label>
                     </div>
                 </div>
-               
                 <div class="row mb-3">
                     <div class="col ">
                         <div class="form-check">
                             @if (Model.Criteres.EstJoueurDuBarselona)
                             {
-                                <input type="checkbox" name="EstJoueurDuBarselona" value="true" id="inputCondition" class="form-check-input" checked>                                
+                                <input type="checkbox" name="EstJoueurDuBarselona" value="true" id="inputCondition" class="form-check-input" checked>
                             }
                             else
                             {
@@ -77,11 +89,11 @@
                             <label for="inputCondition" class="form-check-label">Joueurs du FC Barselona</label>
                         </div>
                     </div>
-                </div>                
+                </div>
                 <div class="row mb-3">
                     <div class="col ">
                         <div class="form-check">
-                             @if (Model.Criteres.EstJoueurDuRealMadrid)
+                            @if (Model.Criteres.EstJoueurDuRealMadrid)
                             {
                                 <input type="checkbox" name="EstJoueurDuRealMadrid" value="true" id="inputCondition1" class="form-check-input" checked>
                             }
@@ -93,7 +105,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row mb-3">
                     <div class="col ">
                         <div class="form-check">
@@ -105,19 +116,19 @@
                             {
                                 <input type="checkbox" name="EstJoueurDuAtleticoMadrid" value="true" id="inputCondition2" class="form-check-input">
                             }
-                            <label for="inputCondition2" class="form-check-label">Joueurs du FC Atletico Madrid</label>                           
+                            <label for="inputCondition2" class="form-check-label">Joueurs du FC Atletico Madrid</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <button type="submit" class="btn btn-primary">Envoyer</button>
-                        <button type="reset" class="btn btn-primary"><a asp-controller="Joueur" asp-action="Recherche" >Réinitialiser</a></button>
-                        @* <button type="reset" class="btn btn-primary">Réinitialiser</button> *@
+                        <button type="reset" class="btn btn-primary"><a asp-controller="Joueur" asp-action="Recherche">Réinitialiser</a></button>
                     </div>
                 </div>
             </form>
-            </div>
+        </div>
     </div>
 </div>
+
         

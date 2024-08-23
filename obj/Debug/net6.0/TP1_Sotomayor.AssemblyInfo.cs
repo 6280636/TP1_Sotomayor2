@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP1_Sotomayor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405e408a807415620577be2ba302a686fa69be47")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP1_Sotomayor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP1_Sotomayor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
