@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\joueur\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\joueur\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\models\\data\\tp1dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:models\\data\\tp1dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|c:\\users\\6280636\\desktop\\tp1_sotomayor2\\views\\joueur\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FB3A496-E41B-4D1D-8F31-27EFF7AECEF6}|TP1_Sotomayor.csproj|solutionrelative:views\\joueur\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,104 +18,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Joueur\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Joueur\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Joueur\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Joueur\\Edit.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwDUAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T01:15:57.361Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-23T00:17:14.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Home\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T00:15:23.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Home\\Edit.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T00:15:23.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TP1DbContext.cs",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Models\\Data\\TP1DbContext.cs",
-              "RelativeDocumentMoniker": "Models\\Data\\TP1DbContext.cs",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Models\\Data\\TP1DbContext.cs",
-              "RelativeToolTip": "Models\\Data\\TP1DbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T00:15:23.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T00:15:23.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T00:15:23.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAABIAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T00:15:23.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Create.cshtml",
-              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Home\\Create.cshtml",
-              "RelativeToolTip": "Views\\Home\\Create.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAABAAAAA",
+              "DocumentMoniker": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Joueur\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Joueur\\Create.cshtml",
+              "ToolTip": "C:\\Users\\6280636\\Desktop\\TP1_Sotomayor2\\Views\\Joueur\\Create.cshtml",
+              "RelativeToolTip": "Views\\Joueur\\Create.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAwwCMAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T00:15:23.143Z"
+              "WhenOpened": "2024-08-23T01:01:21.803Z",
+              "EditorCaption": ""
             }
           ]
         }
