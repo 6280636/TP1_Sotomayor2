@@ -1,0 +1,153 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\AM.png",
+      "PackagePath": "staticwebassets\\Images\\AM.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\BB.png",
+      "PackagePath": "staticwebassets\\Images\\BB.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Jan.png",
+      "PackagePath": "staticwebassets\\Images\\Jan.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Janpet.png",
+      "PackagePath": "staticwebassets\\Images\\Janpet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Messi.png",
+      "PackagePath": "staticwebassets\\Images\\Messi.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Modrich.png",
+      "PackagePath": "staticwebassets\\Images\\Modrich.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Modrichpet.png",
+      "PackagePath": "staticwebassets\\Images\\Modrichpet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\RM.png",
+      "PackagePath": "staticwebassets\\Images\\RM.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Ronaldinho.png",
+      "PackagePath": "staticwebassets\\Images\\Ronaldinho.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Ronaldinhopet.png",
+      "PackagePath": "staticwebassets\\Images\\Ronaldinhopet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Ronaldo.png",
+      "PackagePath": "staticwebassets\\Images\\Ronaldo.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\Ronaldopet.png",
+      "PackagePath": "staticwebassets\\Images\\Ronaldopet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\depool.jpg",
+      "PackagePath": "staticwebassets\\Images\\depool.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\depoolpet.png",
+      "PackagePath": "staticwebassets\\Images\\depoolpet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\etoo.jpg",
+      "PackagePath": "staticwebassets\\Images\\etoo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\etoopet.png",
+      "PackagePath": "staticwebassets\\Images\\etoopet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\figo.jpg",
+      "PackagePath": "staticwebassets\\Images\\figo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\figopet.png",
+      "PackagePath": "staticwebassets\\Images\\figopet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\forlan.jpg",
+      "PackagePath": "staticwebassets\\Images\\forlan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\forlanpet.png",
+      "PackagePath": "staticwebassets\\Images\\forlanpet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\griezma.png",
+      "PackagePath": "staticwebassets\\Images\\griezma.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\griezmapet.png",
+      "PackagePath": "staticwebassets\\Images\\griezmapet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\images.jpg",
+      "PackagePath": "staticwebassets\\Images\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\iniesta.jpg",
+      "PackagePath": "staticwebassets\\Images\\iniesta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\iniestapetit.png",
+      "PackagePath": "staticwebassets\\Images\\iniestapetit.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\log3.avif",
+      "PackagePath": "staticwebassets\\Images\\log3.avif"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\mesipet.png",
+      "PackagePath": "staticwebassets\\Images\\mesipet.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\messi10.jpg",
+      "PackagePath": "staticwebassets\\Images\\messi10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\ronaldinho.jpg",
+      "PackagePath": "staticwebassets\\Images\\ronaldinho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\ronaldobrasil.jpg",
+      "PackagePath": "staticwebassets\\Images\\ronaldobrasil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\ronaldobrasil.png",
+      "PackagePath": "staticwebassets\\Images\\ronaldobrasil.png"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\Images\\th.jpg",
+      "PackagePath": "staticwebassets\\Images\\th.jpg"
+    },
+    {
+      "Id": "C:\\Users\\majo_\\OneDrive\\Bureau\\CursosWeb\\GitKracken\\TP1_Sotomayor\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TP1_Sotomayor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TP1_Sotomayor.props",
+      "PackagePath": "build\\TP1_Sotomayor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TP1_Sotomayor.props",
+      "PackagePath": "buildMultiTargeting\\TP1_Sotomayor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TP1_Sotomayor.props",
+      "PackagePath": "buildTransitive\\TP1_Sotomayor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,47 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model TP1_Sotomayor.Models.Joueur
+
+
+
+
+<div class="container">
+    <h2 class="detail titre"> Detail du Personnage</h2>
+    <div class="row">
+        <!-- Image de l'entité à gauche -->
+        <div class="col-md-4">
+            <img src="@Model.ImgFile" alt="Image de l'entité" class="img-fluid">
+        </div>
+        <!-- Description de l'entité à droite -->
+        <div class="col-md-4">
+            <h2>@Model.Nom</h2>
+            <ul>
+                <li>Age: @Model.Age</li>               
+                <li>Équipe: @Model.Equipe</li>                
+            </ul>
+            <!-- Formulaire pour ajouter l'entité aux favoris -->
+            <form method="post" asp-controller="Favoris" asp-action="AjouterUnJoueur">
+                <!-- Champ caché contenant le nom de l'entité -->
+                <input type="hidden" name="id" value="@Model.Id">
+                <!-- Bouton pour soumettre le formulaire avec une icône et un texte -->
+                <button type="submit" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="M10.252.753C11.283-.524 12.94.444 12.94 2.077c0 1.023-.641 1.712-2.403 3.53C8.196 6.948 6.473 8.36 5.175 9.73 3.411 11.442 2.06 12.572 1.058 13.516c-.88.873-1.16 1.45-1.16 2.472 0 .664.374 1.246 1.03 1.578.65.333 1.434.3 2.138-.084.305-.19.64-.286.994-.286.424 0 .81.195 1.147.563.335.368.528.886.528 1.528 0 1.5-1.205 2.753-3.313 4.865-.198.198-.368.363-.506.495a2.48 2.48 0 0 1-.472.37l-.007.004c-.167.1-.367.217-.614.345l-.007.004a5.4 5.4 0 0 1-.594.307c-.18.083-.325.153-.45.213l-.004.002a5.43 5.43 0 0 1-.45-.213 5.4 5.4 0 0 1-.594-.307l-.007-.004c-.247-.128-.447-.245-.614-.345l-.007-.004a2.48 2.48 0 0 1-.472-.37c-.138-.132-.308-.297-.506-.495C1.205 14.08 0 12.828 0 11.328c0-.642.193-1.16.528-1.528.337-.368.723-.563 1.147-.563.354 0 .69.096.994.286.657.332 1.03.914 1.03 1.578 0 1.023-.28 1.599-1.16 2.472-.998.944-2.35 1.974-3.714 3.013C.641 13.789 0 13.1 0 12.077c0-1.634 1.657-2.601 2.688-3.83C4.329 6.789 6.142 5.585 8 4.172c1.858 1.414 3.671 2.617 5.312 3.416 1.03.709 2.688 1.176 2.688 2.81 0 1.023-.641 1.712-2.403 3.53C8.196 15.052 6.473 16 5.175 16c-1.298 0-3.022-1.412-5.362-4.22C-.617 9.789-.193 9.211.687 8.278c1.033-.987 2.385-2.017 3.782-3.056C5.75 3.899 7.473 2.948 8.77 1.53c1.764-2.019 2.926-3.149 3.838-4.085z" />
+                    </svg>
+                    Ajouter aux favoris
+                </button>
+            </form>
+
+        </div>
+        <div class="col-md-4">
+            <img src="@Model.ImgFile" alt="Image de l'entité" class="img-fluid">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="v col-md-8">
+            <h2>Description</h2>
+            <p>@Model.Description</p>
+         </div>
+    </div>
+</div>

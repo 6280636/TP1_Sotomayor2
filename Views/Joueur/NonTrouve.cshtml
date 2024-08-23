@@ -1,0 +1,23 @@
+﻿@using TP1_Sotomayor.Controllers;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using TP1_Sotomayor.Views.ViewModels;
+@model PageRechercheViewModel;
+@using System.Linq;
+
+@{
+    Layout = "_Layout";
+}
+
+@if (Model.Resultat.Count == 0)
+{
+    <div class="alert alert-info" role="alert">
+    <h5>@ViewData["Message2"]</h5>
+    </div>
+}
+else
+{
+    <div class="alert alert-info" role="alert">
+        <h5>@ViewData["Message"]</h5>
+    </div>
+}
+
